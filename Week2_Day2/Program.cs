@@ -159,21 +159,39 @@ namespace Week2_Day2
 
             //break and continue
 
-            for(int i= 1; i< 20; i++)
+            //for(int i = 1; i <= 20; i++)
+            //{
+            //    if(i % 13 == 0)
+            //    {
+            //        break;
+            //    }
+            //    Console.WriteLine(i);
+
+            //}
+            //Console.WriteLine("The loop has finished.");
+
+
+            //for (int i = 1; i <= 4; i++)
+            //{
+            //    for (int j = 1; j <= 8; j++)
+            //    {
+            //        Console.Write(j);   //Columns
+            //    }
+            //    Console.WriteLine();    //Next row
+            //}
+
+            int n = int.Parse(Console.ReadLine());
+            for (int row = 1; row<= n; row++)
             {
-                if(i % 2 == 0)
+                for(int col = 1; col<= row; col++)
                 {
-                    continue;
+                    Console.Write(col + " ");
                 }
-                Console.WriteLine(i);
-
+                Console.WriteLine();
             }
-            Console.WriteLine("The loop has finished.");
 
 
-
-
-
+        
 
 
 
@@ -247,7 +265,7 @@ namespace Week2_Day2
 
             //    Console.WriteLine("Your healthy snack is " + snack);
 
-            }
-
         }
+
     }
+}
